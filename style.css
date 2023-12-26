@@ -45,9 +45,12 @@ html,body{
     cursor: pointer;
     background: #ebfffc;
     margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .search button img{
-    width: 18px;
+    width: 20px;
 }
 .error{
     text-align: left;
@@ -62,12 +65,11 @@ html,body{
 .weather h1{
     margin-top: 0;
     font-size: 65px;
-    font-weight: 500px;
+    font-weight: 600;
 }
 .weather h2{
     font-size: 45px;
-    font-weight: 300px;
-    margin-top: 10px;
+    font-weight: 500;
 }
 .detalis{
     display: flex;
@@ -89,4 +91,53 @@ html,body{
 .humidity, .wind{
     font-size: 28px;
     font-weight: 400;
+}
+
+@media (max-width:600px) {
+    .card{
+        width: 75%;
+        padding: 20px 30px;
+        border-radius: 25px;
+    }
+    .search{
+        gap: 5px;
+    }
+    .search input{
+        font-size: 4vw;
+        width: 80%;
+        border-radius: 25px;
+    }
+    .search button{
+        height: 9.5vw;
+        width: 9.5vw;
+    }
+    .error{
+        font-size: 4.7vw;
+    }
+    .weather-icon{
+        width: 200px;
+        margin-top: 3vw;
+    }
+    .weather h1{
+        font-size: 13.5vw;
+    }
+    .weather h2{
+        margin-top: -7px;
+        font-size: 11vw;
+    }
+    .detalis{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+    }
+    .col{
+        gap: 15px;
+    }
+    .col img{
+        width: 45px;
+    }
+    .humidity, .wind{
+        font-size: 5vw;
+    }
+
 }
